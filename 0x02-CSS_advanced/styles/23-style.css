@@ -1,0 +1,209 @@
+/* Import Normalize.css from a CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* Universal box-sizing rule */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Custom properties and style declarations */
+
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
+    --section-tagline-margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* 62.5% of the default size (e.g., 10px if the default is 16px) */
+}
+
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base); /* Set the minimum height of line boxes */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+
+a:link {
+    color: var(--text-color);
+    text-decoration: none; /* Remove text decoration from anchor elements */
+}
+
+a:visited {
+    font-style: italic; /* Italicize the text */
+}
+
+a:hover {
+    text-decoration: underline; /* Decorate the links with an underline when hovering */
+}
+
+a:active {
+    background-color: var(--color-light-grey); /* Set the background color to color-light-grey when active */
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.section-header {
+    text-align: var(--section-header-align); /* Set horizontal alignment of section-header */
+}
+
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+.card-category, .section-tagline {
+    color: var(--color-primary);
+}
+
+.section-tagline {
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-tagline-margin);
+}
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding: var(--section-padding); /* Set padding on all 4 sides */
+}
+
+.section-header {
+    padding: var(--section-header-padding); /* Set padding on all 4 sides */
+}
+
+.section-body {
+    padding: var(--section-body-padding); /* Set padding on all 4 sides */
+}
+
+.section-footer {
+    padding: var(--section-footer-padding); /* Set padding on all 4 sides */
+    text-align: var(--section-footer-align); /* Set horizontal alignment */
+}
+
+.footer {
+    padding: var(--footer-padding); /* Set padding on all 4 sides */
+}
+
+.navbar-menu {
+    float: right; /* Let navbar-menu float to the right */
+}
+
+nav {
+    margin: 0; /* Set margin on all sides to 0 */
+    padding: 0; /* Set padding on all sides to 0 */
+    list-style: none; /* No list style for the nav */
+    text-align: center; /* Center align the text */
+}
+
+nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+nav .nav-link:hover {
+    color: var(--nav-item-link-hover); /* Set foreground color value to nav-item-link-hover when hovering */
+}
+
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
+}
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
+.footer ul {
+    text-align: right;
+}
+
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+/* New rules for styling */
+
+.footer-address {
+    color: var(--text-color); /* Set text color to text-color property */
+}
+
+.social-link {
+    display: block; /* Render as block element */
+}
+
+.social-link svg {
+    fill: var(--text-color); /* Fill color of SVG children with text-color variable */
+}
