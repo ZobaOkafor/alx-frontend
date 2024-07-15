@@ -180,7 +180,7 @@ nav .nav-link {
 
 /* Edit the nav-item-link-hover property */
 nav .nav-link:hover {
-    color: var(--color-white); /* Set foreground color value to color-white when hovering */
+    color: var(--nav-item-link-hover); /* Set foreground color value to color-white when hovering */
 }
 
 /* Target the before pseudo elements of nav-link inside nav */
