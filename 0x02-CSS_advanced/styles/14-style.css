@@ -1,3 +1,6 @@
+/* Import Normalize.css from a CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
 /* Custom properties and style declarations based on styles/12-style.css */
 
 :root {
