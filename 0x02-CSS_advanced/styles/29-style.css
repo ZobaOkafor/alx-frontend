@@ -157,14 +157,14 @@ a:active {
     float: right; /* Let navbar-menu float to the right */
 }
 
-nav {
+.nav {
     margin: 0; /* Set margin on all sides to 0 */
     padding: 0; /* Set padding on all sides to 0 */
     list-style: none; /* No list style for the nav */
     text-align: center; /* Center align the text */
 }
 
-nav .nav-item {
+.nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -173,18 +173,18 @@ nav .nav-item {
     margin: var(--nav-item-margin);
 }
 
-nav .nav-link {
+.nav .nav-link {
     display: block;
     padding: 0.5rem 1rem;
 }
 
 /* Edit the nav-item-link-hover property */
-nav .nav-link:hover {
+.nav .nav-link:hover {
     color: var(--nav-item-link-hover); /* Set foreground color value to color-white when hovering */
 }
 
 /* Target the before pseudo elements of nav-link inside nav */
-nav .nav-link::before {
+.nav .nav-link::before {
     content: ""; /* Set content value to empty */
     position: absolute; /* Absolutely position the targeted elements */
     top: 0; /* Set vertical position to 0 */
@@ -195,7 +195,7 @@ nav .nav-link::before {
 }
 
 /* Target the before pseudo elements of nav-link when nav-item is hover and is inside nav */
-nav .nav-item:hover .nav-link::before {
+.nav .nav-item:hover .nav-link::before {
     background-color: var(--color-primary); /* Set background color to color-primary */
     width: 100%; /* Set width to 100% */
 }
