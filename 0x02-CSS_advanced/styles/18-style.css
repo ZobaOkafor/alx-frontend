@@ -156,7 +156,7 @@ nav .nav-item {
 
 nav .nav-link {
     display: block;
-    padding: calc(0.5 * 1rem) 1rem;
+    padding: 0.5rem 1rem;
 }
 
 nav .nav-link:hover {
