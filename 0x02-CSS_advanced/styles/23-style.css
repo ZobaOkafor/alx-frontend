@@ -171,11 +171,11 @@ ul.row {
     list-style: none;
 }
 
-.row::after {
+/*.row::after {
     content: "";
     display: table;
     clear: both;
-}
+}*/
 
 [class^="col-"] {
     float: left;
@@ -210,5 +210,5 @@ ul.row {
     display: block; /* Render as block element */
 }
 
-.social-link svg {
+.social-link > svg {
     fill: var(--text-color); /* Fill color of SVG children with text-color variable */
