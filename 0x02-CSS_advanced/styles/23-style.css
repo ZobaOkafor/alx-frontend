@@ -171,6 +171,12 @@ ul.row {
     list-style: none;
 }
 
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 [class^="col-"] {
     float: left;
     padding: 0.5rem;
@@ -206,4 +212,3 @@ ul.row {
 
 .social-link svg {
     fill: var(--text-color); /* Fill color of SVG children with text-color variable */
-}
