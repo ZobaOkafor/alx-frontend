@@ -191,7 +191,7 @@ nav .nav-link::before {
     left: 0; /* Set horizontal position to 0 */
     background-color: var(--color-white); /* Set background color to color-white */
     width: 0; /* Set width to 0 */
-    height: 20%; /* Set height to 20% of the root element value */
+    height: 0.2rem; /* Set height to 20% of the root element value */
 }
 
 /* Target the before pseudo elements of nav-link when nav-item is hover and is inside nav */
