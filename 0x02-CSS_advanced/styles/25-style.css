@@ -150,14 +150,14 @@ a:active {
     float: right; /* Let navbar-menu float to the right */
 }
 
-nav {
+.nav {
     margin: 0; /* Set margin on all sides to 0 */
     padding: 0; /* Set padding on all sides to 0 */
     list-style: none; /* No list style for the nav */
     text-align: center; /* Center align the text */
 }
 
-nav .nav-item {
+.nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -166,12 +166,12 @@ nav .nav-item {
     margin: var(--nav-item-margin);
 }
 
-nav .nav-link {
+.nav .nav-link {
     display: block;
     padding: 0.5rem 1rem;
 }
 
-nav .nav-link:hover {
+.nav .nav-link:hover {
     color: var(--nav-item-link-hover); /* Set foreground color value to nav-item-link-hover when hovering */
 }
 
